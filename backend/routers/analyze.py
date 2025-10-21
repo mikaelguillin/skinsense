@@ -59,3 +59,4 @@ async def analyze_health():
     Health check for analyze service
     """
     return {"status": "healthy", "service": "analyze"}
+

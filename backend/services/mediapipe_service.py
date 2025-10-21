@@ -136,3 +136,4 @@ class MediaPipeService:
 
 # Global service instance
 mediapipe_service = MediaPipeService()
+

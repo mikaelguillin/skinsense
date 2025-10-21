@@ -291,3 +291,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Chakra UI for beautiful components
 - FastAPI for the excellent Python framework
 - React team for the amazing frontend library
+

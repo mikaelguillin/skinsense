@@ -231,3 +231,4 @@ logging.basicConfig(level=logging.INFO)
 - Adjust MediaPipe parameters
 - Optimize image processing
 - Add caching if needed
+

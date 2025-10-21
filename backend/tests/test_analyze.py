@@ -67,3 +67,4 @@ def test_analyze_no_file():
 
 if __name__ == "__main__":
     pytest.main([__file__])
+

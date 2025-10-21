@@ -49,3 +49,4 @@ export const useAnalysisStore = create<AnalysisState>((set) => ({
       uploadedImage: null,
     }),
 }));
+
