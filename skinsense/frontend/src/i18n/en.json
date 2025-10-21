@@ -1,0 +1,44 @@
+{
+  "app": {
+    "title": "SkinSense",
+    "subtitle": "AI Skin Health Analyzer"
+  },
+  "upload": {
+    "title": "Upload Your Photo",
+    "subtitle": "Get instant AI-powered skin analysis",
+    "button": "Choose Image",
+    "dragText": "Drag and drop your image here, or click to select",
+    "supportedFormats": "Supported formats: JPG, PNG, WebP",
+    "maxSize": "Max file size: 10MB"
+  },
+  "analysis": {
+    "analyzing": "Analyzing your skin...",
+    "results": "Analysis Results",
+    "facesDetected": "Faces Detected",
+    "skinTone": "Skin Tone",
+    "hexValue": "Hex Value",
+    "interpretation": {
+      "title": "Skin Health Insights",
+      "good": "Your skin appears healthy with good tone consistency",
+      "fair": "Your skin shows a fair complexion with room for improvement",
+      "needsCare": "Consider consulting a dermatologist for personalized advice"
+    }
+  },
+  "language": {
+    "toggle": "Language",
+    "english": "English",
+    "spanish": "Español"
+  },
+  "errors": {
+    "uploadFailed": "Failed to upload image. Please try again.",
+    "analysisFailed": "Analysis failed. Please try with a different image.",
+    "noFaceDetected": "No face detected in the image. Please upload a clear photo with a visible face.",
+    "invalidFormat": "Invalid image format. Please use JPG, PNG, or WebP.",
+    "fileTooLarge": "File is too large. Please use an image smaller than 10MB."
+  },
+  "buttons": {
+    "tryAgain": "Try Again",
+    "uploadAnother": "Upload Another",
+    "download": "Download Results"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "app": {
+    "title": "SkinSense",
+    "subtitle": "Analizador de Salud de la Piel con IA"
+  },
+  "upload": {
+    "title": "Sube Tu Foto",
+    "subtitle": "Obtén análisis instantáneo de la piel con IA",
+    "button": "Seleccionar Imagen",
+    "dragText": "Arrastra y suelta tu imagen aquí, o haz clic para seleccionar",
+    "supportedFormats": "Formatos soportados: JPG, PNG, WebP",
+    "maxSize": "Tamaño máximo: 10MB"
+  },
+  "analysis": {
+    "analyzing": "Analizando tu piel...",
+    "results": "Resultados del Análisis",
+    "facesDetected": "Caras Detectadas",
+    "skinTone": "Tono de Piel",
+    "hexValue": "Valor Hex",
+    "interpretation": {
+      "title": "Insights de Salud de la Piel",
+      "good": "Tu piel parece saludable con buena consistencia de tono",
+      "fair": "Tu piel muestra un cutis claro con margen de mejora",
+      "needsCare": "Considera consultar a un dermatólogo para consejos personalizados"
+    }
+  },
+  "language": {
+    "toggle": "Idioma",
+    "english": "English",
+    "spanish": "Español"
+  },
+  "errors": {
+    "uploadFailed": "Error al subir la imagen. Por favor, inténtalo de nuevo.",
+    "analysisFailed": "El análisis falló. Por favor, prueba con una imagen diferente.",
+    "noFaceDetected": "No se detectó cara en la imagen. Por favor, sube una foto clara con una cara visible.",
+    "invalidFormat": "Formato de imagen inválido. Por favor, usa JPG, PNG o WebP.",
+    "fileTooLarge": "El archivo es muy grande. Por favor, usa una imagen menor a 10MB."
+  },
+  "buttons": {
+    "tryAgain": "Intentar de Nuevo",
+    "uploadAnother": "Subir Otra",
+    "download": "Descargar Resultados"
+  }
+}
