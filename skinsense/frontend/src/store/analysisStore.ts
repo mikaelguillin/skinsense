@@ -8,8 +8,8 @@ export interface SkinTone {
 }
 
 export interface AnalysisResult {
-  facesDetected: number;
-  skinTone: SkinTone;
+  faces_detected: number;
+  skin_tone: SkinTone;
   interpretation: string;
 }
 

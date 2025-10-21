@@ -21,6 +21,8 @@ const ResultsCard: React.FC = () => {
   const { t } = useTranslation();
   const { result, error, uploadedImage, reset } = useAnalysisStore();
 
+  console.log({result})
+
   const bgColor = useColorModeValue("white", "gray.800");
   const borderColor = useColorModeValue("gray.200", "gray.600");
 
@@ -60,7 +62,7 @@ const ResultsCard: React.FC = () => {
     if (facesDetected === 0) return t("errors.noFaceDetected");
 
     // Simple interpretation based on skin tone brightness
-    const brightness = (skinTone?.r + skinTone?.g + skinTone?.b) / 3;
+    const brightness = (skinTone.r + skinTone.g + skinTone.b) / 3;
     if (brightness > 200) return t("analysis.interpretation.good");
     if (brightness > 150) return t("analysis.interpretation.fair");
     return t("analysis.interpretation.needsCare");
@@ -98,7 +100,7 @@ const ResultsCard: React.FC = () => {
         <HStack justify="space-between">
           <Text fontWeight="semibold">{t("analysis.facesDetected")}:</Text>
           <Badge colorScheme="brand" fontSize="md" px={3} py={1}>
-            {result.facesDetected}
+            {result.faces_detected}
           </Badge>
         </HStack>
 
@@ -111,17 +113,17 @@ const ResultsCard: React.FC = () => {
               w="40px"
               h="40px"
               borderRadius="full"
-              bg={`rgb(${result.skinTone?.r}, ${result.skinTone?.g}, ${result.skinTone?.b})`}
+              bg={`rgb(${result.skin_tone.r}, ${result.skin_tone.g}, ${result.skin_tone.b})`}
               border="2px"
               borderColor="gray.300"
             />
             <VStack align="start" spacing={1}>
               <Text fontSize="sm" color="gray.600">
-                RGB: {result.skinTone?.r}, {result.skinTone?.g},{" "}
-                {result.skinTone?.b}
+                RGB: {result.skin_tone.r}, {result.skin_tone.g},{" "}
+                {result.skin_tone.b}
               </Text>
               <Text fontSize="sm" color="gray.600">
-                {t("analysis.hexValue")}: {result.skinTone?.hex}
+                {t("analysis.hexValue")}: {result.skin_tone.hex}
               </Text>
             </VStack>
           </HStack>
@@ -134,7 +136,7 @@ const ResultsCard: React.FC = () => {
             {t("analysis.interpretation.title")}
           </Text>
           <Text fontSize="sm" color="gray.600">
-            {getInterpretation(result.facesDetected, result.skinTone)}
+            {getInterpretation(result.faces_detected, result.skin_tone)}
           </Text>
         </Box>
 
