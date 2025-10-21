@@ -51,7 +51,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onImageSelect }) => {
         toast({
           title: t("analysis.results"),
           description:
-            t("analysis.facesDetected") + ": " + result.facesDetected,
+            t("analysis.facesDetected") + ": " + result.faces_detected,
           status: "success",
           duration: 3000,
           isClosable: true,
